@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Raquel Vieira | Experiências Digitais</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="header-buttons">
+
+            <button id="btn-cor-fundo">Mudar cor</button>
+
+            <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">
+                Entrar
+            </button>
+
+            <button
+                class="register"
+                onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">
+                Orçamento
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="inicio" id="inicio">
+
+            <div class="inicio-conteudo">
+
+                <h1>
+                    Transformo ideias em experiências digitais que geram resultados.
+                </h1>
+
+                <p>
+                    Desenvolvo soluções digitais personalizadas, criativas e funcionais
+                    para pessoas e empresas que querem se destacar no mundo digital.
+                </p>
+
+                <div class="botoes">
+
+                    <button onclick="document.getElementById('projetos').scrollIntoView({behavior: 'smooth'})">
+                        Conheça meu trabalho
+                    </button>
+
+                    <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">
+                        Solicitar orçamento
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="sobre" id="sobre">
+
+            <div class="foto-container">
+
+                <div class="foto-circulo">
+
+                    <img
+                        src="img/foto1.jpg"
+                        alt="Foto de Raquel Vieira">
+
+                </div>
+
+            </div>
+
+            <div class="sobre-conteudo">
+
+                <h2>
+                    Sobre mim
+                </h2>
+
+                <p>
+                    Meu nome é Raquel Vieira, tenho 18 anos e sou apaixonada
+                    por tecnologia, criatividade e desenvolvimento de soluções digitais.
+                </p>
+
+                <p>
+                    Busco transformar ideias em projetos modernos, funcionais
+                    e personalizados, sempre levando em consideração os objetivos
+                    e as necessidades de cada cliente.
+                </p>
+
+                <button>
+                    Conheça mais sobre mim
+                </button>
+
+            </div>
+
+        </section>
+
+        <section id="servicos">
+
+            <h2>Serviços</h2>
+
+            <p>
+                Desenvolvimento de sites, landing pages e soluções digitais
+                personalizadas.
+            </p>
+
+        </section>
+
+
+        <section id="projetos">
+
+            <h2>Projetos</h2>
+
+            <p>
+                Projetos digitais desenvolvidos com criatividade,
+                tecnologia e funcionalidade.
+            </p>
+
+        </section>
+
+
+        <section id="experiencia">
+
+            <h2>Experiência</h2>
+
+            <p>
+                Experiências e conhecimentos adquiridos na área de tecnologia
+                e desenvolvimento web.
+            </p>
+
+        </section>
+
+
+        <section class="contato" id="contato">
+
+            <div class="contato-formulario">
+
+                <form id="contact-form">
+
+                    <label for="nome">
+                        Nome
+                    </label>
+
+                    <input
+                        id="nome"
+                        name="nome"
+                        type="text"
+                        placeholder="Digite seu nome"
+                        required>
+
+
+                    <label for="sobrenome">
+                        Sobrenome
+                    </label>
+
+                    <input
+                        id="sobrenome"
+                        name="sobrenome"
+                        type="text"
+                        placeholder="Digite seu sobrenome"
+                        required>
+
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="Digite seu e-mail"
+                        required>
+
+
+                    <label for="mensagem">
+                        Mensagem
+                    </label>
+
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        placeholder="Conte um pouco sobre seu projeto"
+                        required></textarea>
+
+
+                    <div
+                        class="g-recaptcha"
+                        data-sitekey="6LeV9eUtAAAAANh2cHcqcjc2lbNaLz-OzQZ4MYXS">
+                    </div>
+
+
+                    <button type="submit">
+                        Enviar mensagem
+                    </button>
+
+                    <p id="status-form"></p>
+
+                </form>
+
+            </div>
+
+
+            <div class="contato-texto">
+
+                <h2>
+                    Vamos transformar sua ideia em realidade?
+                </h2>
+
+                <p>
+                    Tem um projeto em mente ou precisa de uma solução digital
+                    para o seu negócio? Entre em contato comigo.
+                </p>
+
+                <button
+                    onclick="document.getElementById('nome').focus()">
+                    Fale comigo
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
